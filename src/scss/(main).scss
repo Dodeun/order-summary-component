@@ -1,11 +1,5 @@
 @import 'variables';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import 'global';
 
-body {
-    background-color: $test-color;
-}
+@import 'mediaqueries';

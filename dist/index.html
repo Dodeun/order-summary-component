@@ -6,10 +6,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>Frontend Mentor | Order summary component</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <h1>Test</h1>
+  <div class="bg"></div>
+  <main class="order-card">
+    <div class="image"></div>
+    <div class="order-content-wrapper">
+      <h1>Order Summary</h1>
+      <p class="order-description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="order-details">
+        <img src="img/icon-music.svg" alt="Music note icon">
+        <div class="plan-and-cost">
+          <p>Annual Plan</p>
+          <p>$59.99/year</p>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <a href="#" class="btn">Proceed to Payment</a>
+      <a href="#" class="order-cancel">Cancel Order</a>
+    </div>
   </main>
 </body>
 </html>

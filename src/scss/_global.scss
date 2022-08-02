@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+body {
+    background-color: $color-bg-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-color: lighten($color-bg-main, 1%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -50px;
+}
+
+.order-card {
+    min-width: 320px;
+    max-width: 450px;
+    width: 90%;
+    min-height: 565px;
+    background-color: $color-bg-card;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 15px rgb(0 0 0 / 5%);
+
+    .image {
+        width: 100%;
+        height: 160px;
+        background-image: url(../img/illustration-hero.svg);
+        background-size: cover;
+    }
+
+    .order-content-wrapper {
+        padding: 0 1.5rem;
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: $color-title;
+            margin: 1.8rem 0 1.3rem;
+        }
+
+        .order-description {
+            line-height: 1.6rem;
+            color: $color-secondary;
+            font-size: 0.95rem;
+            padding: 0 0.5rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .order-details {
+            width: 100%;
+            background-color: $color-bg-details;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1.4rem;
+
+            .plan-and-cost {
+                margin-left: 1.2rem;
+                margin-right: 2.5rem;
+                font-size: 0.9rem;
+
+                p:nth-child(1) {
+                    font-weight: 900;
+                    margin-bottom: 0.1rem;
+                }
+
+                p:nth-child(2) {
+                    font-weight: 500;
+                    color: $color-secondary;
+                }
+            }
+
+            a {
+                font-weight: 700;
+                font-size: 0.8rem;
+                color: $color-primary;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-primary-hover;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .btn, .order-cancel {
+            display: block;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            background-color: $color-primary;
+            color: $color-bg-card;
+            font-weight: 700;
+            padding: 1rem 0;
+            border-radius: 10px;
+            margin-bottom: 1.4rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            box-shadow: 0 20px 13px 0px rgba($color-primary, 0.15);
+
+            &:hover {
+                background-color: $color-primary-hover;
+            }
+        }
+
+        .order-cancel {
+            margin: 0 auto;
+            width: fit-content;
+            color: $color-secondary;
+            font-weight: 900;
+
+            &:hover {
+                color: $color-title;
+            }
+        }
+    }
+}
