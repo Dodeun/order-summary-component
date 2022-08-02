@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.min.css"],"names":[],"mappings":"AAEA,EACI,qBAAA,CACA,QAAA,CACA,SAAJ,CAGA,KACI,wBAAJ","file":"style.min.css","sourcesContent":["@import 'variables';\r\n\r\n* {\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nbody {\r\n    background-color: $test-color;\r\n}"]}
